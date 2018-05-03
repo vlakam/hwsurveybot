@@ -1,0 +1,17 @@
+{
+  "name": "hw-survey",
+  "version": "1.0.0",
+  "description": "HW survey. AMD POBEDA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladislav Kamenev",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "node-telegram-bot-api": "^0.30.0",
+    "redis": "^2.8.0"
+  }
+}

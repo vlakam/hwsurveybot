@@ -1,0 +1,23 @@
+{
+  "name": "hwsurveybot",
+  "description": "A telegram bot that stores configurations of conference users.",
+  "repository": "https://github.com/vlakam/hwsurveybot",
+  "keywords": ["hw", "telegram", "bot"],
+  "addons": [
+    "heroku-redis:hobby-dev"
+  ],
+  "env": {
+    "TELEGRAMTOKEN": {
+      "description": "The API key for your bot given to you from @BotFather."
+    },
+    "ADMINID": {
+      "description": "Optional. Admin username in format @username. He will receive error messages",
+      "value": "@username",
+      "required": false
+    },
+    "APPURL": {
+      "description": "Application URL is needed for webhook. Otherwise will work in polling mode and sleep much.",
+      "value": "https://%insert_app_name%.herokuapp.com:443"
+    }
+  }
+}
